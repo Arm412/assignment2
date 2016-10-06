@@ -3,19 +3,19 @@
   display: none;
 }
 
-#error_text1{
+#errorText1{
   display: none;
 }
 
-#error_text2{
+#errorText2{
   display: none;
 }
 
-#hidden_text_y{
+#hiddenTextY{
   display: none;
 }
 
-#hidden_text_n{
+#hiddenTextN{
   display: none;
 }
 
@@ -29,7 +29,7 @@ body{
   background-color: #7ff;
 }
 
-#error_text{
+#errorText{
   display: none;
 }
 
@@ -42,4 +42,8 @@ body{
   height: 250px;
   width: 250px;
   margin: 300px auto;
+}
+
+#showInput{
+  font-size: 1.5rem;
 }

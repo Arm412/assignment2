@@ -13,7 +13,7 @@
             <div class="names">
               <p class="sentence">Please enter your first and last name:</p>
               <input type="text" name="name1" value=""> <br>
-              <p id="error_text1">Please enter a name into the text box.</p> <br>
+              <p id="errorText1">Please enter a name into the text box.</p> <br>
               <input type="button" value="Click!" onclick="display_name(this.form.name1.value)">
             </div>
           </fieldset>
@@ -30,7 +30,7 @@
                   <option value="purple">Purple</option>
                 </select>
               </label>
-              <p id="error_text2">Please select one of the color options.</p> <br>
+              <p id="errorText2">Please select one of the color options.</p> <br>
               <input type="button" value="Click!" onclick="change_background(this.form.bgColor.value)">
             </div>
           </fieldset>
@@ -46,13 +46,13 @@
                 </select>
               </label>
               <input type="button" value="Click!" onclick="isItAHoverboard(this.form.hover.value)"> <br>
-              <p id="hidden_text_y">But it has wheels.</p>
-              <p id="hidden_text_n">Correct!</p>
-              <p id="error_text">Please select one of the options.</p>
+              <p id="hiddenTextY">But it has wheels.</p>
+              <p id="hiddenTextN">Correct!</p>
+              <p id="errorText">Please select one of the options.</p>
             </div>
           </fieldset>
           <fieldset>
-            <input type="submit" value="Submit" id="submit" onclick="disappear()">
+            <input type="submit" value="Submit" id="submit" onclick="disappear(this.form.name1.value, this.form.bgColor.value, this.form.hover.value)"> Submit the form.
           </fieldset>
         </form>
       </div>
@@ -62,6 +62,7 @@
     <footer>
       <div id="successDiv">
         <h1 id="successText">Submitted!</h1>
+	      <p id="showInput"></p>
       </div>
     </footer>
   </html>
