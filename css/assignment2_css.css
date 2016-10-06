@@ -1,0 +1,45 @@
+.show_name{
+  color: #000;
+  display: none;
+}
+
+#error_text1{
+  display: none;
+}
+
+#error_text2{
+  display: none;
+}
+
+#hidden_text_y{
+  display: none;
+}
+
+#hidden_text_n{
+  display: none;
+}
+
+fieldset{
+  width: 225px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+body{
+  background-color: #7ff;
+}
+
+#error_text{
+  display: none;
+}
+
+#formHolder{
+  display: block;
+}
+
+#successDiv{
+  display: none;
+  height: 250px;
+  width: 250px;
+  margin: 300px auto;
+}

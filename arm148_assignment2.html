@@ -1,0 +1,67 @@
+<!doctype html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Assignment 2</title>
+      <link rel="stylesheet" href="css/assignment2_css.css">
+    </head>
+    <body>
+      <div class="hold_forms" id="formHolder">
+        <form class="form1" method="get" id="myForm1" action="">
+          <fieldset>
+            <h1 id="show_name"></h1>
+            <div class="names">
+              <p class="sentence">Please enter your first and last name:</p>
+              <input type="text" name="name1" value=""> <br>
+              <p id="error_text1">Please enter a name into the text box.</p> <br>
+              <input type="button" value="Click!" onclick="display_name(this.form.name1.value)">
+            </div>
+          </fieldset>
+          <fieldset class="bg_color" id="colors">
+            <div>
+              <p>What color would you like for the background of this box?</p>
+              <label>
+                <select name="bgColor">
+                  <option value=""></option>
+                  <option value="blue">Blue</option>
+                  <option value="red">Red</option>
+                  <option value="yellow">Yellow</option>
+                  <option value="green">Green</option>
+                  <option value="purple">Purple</option>
+                </select>
+              </label>
+              <p id="error_text2">Please select one of the color options.</p> <br>
+              <input type="button" value="Click!" onclick="change_background(this.form.bgColor.value)">
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="hoverboard">
+              <img src="images/notHoverboard.png" alt="Not a Hoverboard" height="125" width="175">
+              <p>What is this device?</p>
+              <label>
+                <select name="hover">
+                  <option value=""></option>
+                  <option value="yes">Hover board</option>
+                  <option value="no">Not a Hover board</option>
+                </select>
+              </label>
+              <input type="button" value="Click!" onclick="isItAHoverboard(this.form.hover.value)"> <br>
+              <p id="hidden_text_y">But it has wheels.</p>
+              <p id="hidden_text_n">Correct!</p>
+              <p id="error_text">Please select one of the options.</p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <input type="submit" value="Submit" id="submit" onclick="disappear()">
+          </fieldset>
+        </form>
+      </div>
+      <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.4.1.min.js"></script>
+      <script type="text/javascript" src="js/assignment2_js.js"></script>
+    </body>
+    <footer>
+      <div id="successDiv">
+        <h1 id="successText">Submitted!</h1>
+      </div>
+    </footer>
+  </html>
